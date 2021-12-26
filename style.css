@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+:root {
+  --white: #fff;
+  --black: #1c2b2d;
+  --color-primary: #9d0191;
+  --color-sec: #db6400;
+  --red: #ff0000;
+  --light-green: #bae029;
+  --yellow: #fefe86;
+  --grey: #eee;
+  --dark-grey: #222831;
+  --cocoa-brown: #321f28;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  min-height: 100vh;
+  background: var(--yellow) url("images/todo-bg.jpg") no-repeat center/cover;
+  overflow-y: hidden;
+}
+
+section {
+  width: 100%;
+  padding: 0 3em;
+}
+
+.container {
+  max-width: 61em;
+  background: url("images/list.png") no-repeat center;
+  background-size: 100% 100%;
+  padding: 10em 2.5em 4em;
+  margin: 2em auto;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.add-item {
+  background-color: var(--color-primary);
+  padding: 5.5em 1.5em;
+  margin: 2em auto;
+  border-radius: 5px;
+}
+
+.add-item form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add-item form input {
+  padding: 0.5em 0;
+  font-size: 1.8rem;
+  color: var(--grey);
+  width: 75%;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+  outline: none;
+  background-color: transparent;
+  margin-left: 0.3em;
+}
+
+::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+form button {
+  font-size: 1.6rem;
+  font-weight: 600;
+  border: 1px solid transparent;
+  outline: none;
+  border-radius: 5px;
+  background-color: var(--color-sec);
+  color: var(--grey);
+  padding: 0.75em 1.25em;
+  margin-left: 0.25em;
+  cursor: pointer;
+}
+
+form button:hover,
+form button:focus {
+  background-color: var(--light-green);
+  color: var(--cocoa-brown);
+}
+
+ol h2 {
+  font-size: 2rem;
+  color: var(--color-sec);
+  margin-bottom: 0.75em;
+}
+
+ol li {
+  font-size: 1.6rem;
+  margin: 0.3em 0;
+  background-color: var(--grey);
+  border-radius: 5px;
+  padding: 1em;
+  position: relative;
+}
+
+ol li:nth-child(odd) {
+  background-color: var(--cocoa-brown);
+  color: var(--white);
+}
+
+li button {
+  font-size: 1.6rem;
+  color: var(--red);
+  background-color: transparent;
+  border: none;
+  outline: none;
+  position: absolute;
+  right: 1em;
+  top: 1.2em;
+  cursor: pointer;
+}
+
+#clear {
+  font-size: 1.6rem;
+  padding: 0.4em 0.8em;
+  margin-top: 1em;
+  cursor: pointer;
+}
