@@ -20,12 +20,13 @@ const addTask = (e) => {
         alert("Please enter a task");
     }
 
+    newLi.addEventListener("click", function() {
+        newLi.style.textDecorationLine = "line-through";
+    });
+
     delBtn.addEventListener("click", function() {
-        const del = confirm("Are you sure you want to delete this task?");
-        if (del === true) {
-            const parent = this.parentNode;
-            parent.remove();
-        }
+        const parent = this.parentNode;
+        parent.remove();
     }
 )};
 
