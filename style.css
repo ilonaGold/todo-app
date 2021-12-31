@@ -31,7 +31,7 @@ body {
   font-family: "Open Sans", sans-serif;
   min-height: 100vh;
   background: var(--yellow) url("images/todo-bg.jpg") no-repeat center/cover;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
 }
 
 section {

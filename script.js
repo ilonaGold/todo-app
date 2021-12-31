@@ -25,8 +25,11 @@ const addTask = (e) => {
     });
 
     delBtn.addEventListener("click", function() {
-        const parent = this.parentNode;
-        parent.remove();
+        // const del = confirm("Are you sure you want to delete this task?");
+        // if (del === true) {
+            const parent = this.parentNode;
+            parent.remove();
+        // }
     }
 )};
 
@@ -35,6 +38,5 @@ add.addEventListener("click", addTask);
 clear.addEventListener("click", () => {
     todoList.innerHTML = "";
 });
-
 
 
